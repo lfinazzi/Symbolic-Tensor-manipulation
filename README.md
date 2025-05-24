@@ -1,14 +1,14 @@
 # Symbolic-Tensor-manipulation
 This is a project that performs symbolically written operations between tensors. Some of these implemented operations are:  scalar contraction between indeces, standard matrix multiplication, or outer product between indeces.  This library was developed with relativity equation manipulation in mind.
 
-SYNTAX OF SYMBOLIC OPERATIONS:
+# Syntax of symbolic operations
 
   1. Define tensor shape and initialize it with CreateTensor().
   2. initialize tensor components with constants with InitializeTensorConstant() or with function pointers with InitializeTensorFunction().
-  3. Define symbolic expression of tensor equation. For example, if we want to represent the equation A_{l} B_{jk} C_{kl} = D_{j}, we do it writing the operation "l,jk,kl->j".
+  3. Define symbolic expression of tensor equation. For example, if we want to represent the equation $A_{l} B_{jk} C_{kl} = D_{j}$, we do it writing the operation "l,jk,kl->j".
   4. Use the Einsum() function to perform the operation described symbolically with initialized tensors. 
 
-USAGE: 
+# Usage
 
 A few use cases are included in the main() function to prove library functionality:
 
